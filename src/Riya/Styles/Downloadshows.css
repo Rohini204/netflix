@@ -1,0 +1,25 @@
+.download{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background: black;
+}
+
+@media(max-width:1250px){
+    .download{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+.relative{
+
+    position: relative;
+}
+.img1{
+    width: 600px;
+    height: 500px;
+    
+}
+
+

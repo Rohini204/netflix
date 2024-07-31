@@ -1,0 +1,50 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    width: 150px;
+}
+label{
+    padding:0 10px;
+}
+select{
+    background: none;
+    color: white;
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    text-align: center;
+}
+option{
+    color: black;
+}
+
+.btn{
+    background-color: rgb(224, 46, 46);
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(188, 39, 39);
+}
+
+@media(max-width:1000px){
+    .navbar img{
+        width: 120px;
+    }
+    .btn{
+        width: 60px;
+        height: 29px;
+    }
+    select{
+        width: 100px;
+        height: 30px;
+    }
+}

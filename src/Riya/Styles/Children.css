@@ -1,0 +1,39 @@
+
+.enjoyontv{
+    background: black;
+    
+}
+
+.insideenjoy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+@media(max-width:1250px){
+    .insideenjoy{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.inside2{
+    padding: 0 20px;
+}
+.relative{
+
+    position: relative;
+}
+.img1{
+    width: 600px;
+    height: 500px;
+    
+}
+
+@media(max-width:620px){
+    .img1{
+        width: 350px;
+        height: 300px;
+    }
+    
+
+}

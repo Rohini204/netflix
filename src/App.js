@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Firstpage from './Riya/Pages/Firstpage';
+
 
 function App() {
   return (
     <div className="App">
-      Hi
+      <Firstpage/>
     </div>
   );
 }
