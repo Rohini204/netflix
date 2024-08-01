@@ -12,6 +12,9 @@
         text-align: center;
     }
 }
+.container{
+    padding:0 100px;
+}
 .relative{
 
     position: relative;

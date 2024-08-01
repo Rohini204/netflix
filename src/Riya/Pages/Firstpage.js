@@ -4,6 +4,7 @@ import Getstarted from '../Components/Getstarted'
 import Enjoyontv from '../Components/Enjoyontv'
 import Downloadshows from '../Components/Downloadshows'
 import Childrensec from '../Components/Childrensec'
+import Faq from '../Components/Faq'
 
 const Firstpage = () => {
   return (
@@ -12,6 +13,7 @@ const Firstpage = () => {
         <Enjoyontv/>
         <Downloadshows/>
         <Childrensec/>
+        <Faq/>
     </div>
   )
 }
