@@ -1,0 +1,21 @@
+.footer-l a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.footer-l{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer1 p{
+    text-align: center;
+    padding-bottom: 15px;
+    color: rgb(175, 170, 170);
+}
+@media (max-width:800px){
+    .footer-l a{
+        font-size: 14px;
+        text-align: center;
+    }
+}

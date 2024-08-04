@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Faq.css'; 
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import Footer2 from './Footer2';
 
 const Faq = () => {
   
@@ -90,7 +91,7 @@ const Faq = () => {
       )}
       <div className='inside'>
       <div>Ready to watch? Enter your email to create or restart your membership.</div>
-        <form>
+        <form action='Subscription'>
 
         <div className='inside1'>
           <input type="email" placeholder="Email address" required/>
@@ -102,6 +103,7 @@ const Faq = () => {
         </div>
         </form>
       </div>
+      <Footer2/>
     </div>
   );
 };

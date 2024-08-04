@@ -1,0 +1,148 @@
+.subscription h1{
+    padding:0 40px ;
+}
+.topsub{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    border-bottom: solid 1px rgb(199, 194, 194);
+
+
+}
+.topsub a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.subscription img{
+    width: 100px;
+    height: 30px;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+}
+.subscription button{
+    background-color: rgb(224, 46, 46);
+    border-radius: 5px;
+    margin: 20px 0;
+    color: white;
+    font-size: 24px;
+    padding:20px 150px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.subscription button:hover{
+    background-color: rgb(188, 39, 39);
+}
+@media (max-width:1049px){
+    .ibwhole{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ib{
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        padding-left: 10px;
+        margin: 0 5px;
+        border: solid 1px rgb(199, 194, 194);
+        border-radius: 10px;
+
+    }
+    .ib.clicked{
+        background-color: rgb(102, 39, 189);
+        color: white;
+    }
+    .innerbox{
+        display: none;
+    }
+    .innerbox2{
+        display: none;
+    }
+    .innerbox2.disp{
+        display: contents;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 50px 70px;
+    }
+    .col-grey{
+        padding: 20px;
+        color: rgb(121, 117, 117);
+        
+        border-bottom: solid 1px rgb(199, 194, 194);
+    }
+    .col-black{
+        padding: 20px;
+        text-align: end;
+        border-bottom: solid 1px rgb(199, 194, 194);
+    }
+    
+    .subscription h1{
+        font-size: larger;
+        text-align: center;
+    }
+    
+}
+
+@media(max-width:600px){
+    .ib{
+        width: 80px;
+        height: 80px;
+        font-size: smaller;
+    }
+    .innerbox2.disp{
+        padding: 50px 20px;
+    }
+}
+@media (min-width:1050px){
+    .subscription h1{
+        padding-left: 230px;
+    }
+    .ib{
+        display: none;
+    }
+    .flexouter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.flexinner1{
+    margin: 10px;
+    border: solid 1px rgb(199, 194, 194);
+    border-radius: 10px;
+    padding:10px;
+    width: 210px;
+    cursor: pointer;
+}
+.flexinner1.clicked{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.innerbox{
+    border: 1px solid rgb(199, 194, 194);
+    padding:0 10px;
+    background-color: rgb(102, 39, 189);
+    color: white;
+    border-radius: 10px;
+}
+.innerbox2{
+    padding: 20px 10px;
+    
+}
+.col-grey{
+    color: rgb(121, 117, 117);
+    padding: 5px 0;
+}
+.col-black{
+    padding-bottom: 20px;
+    border-bottom: 1px rgb(187, 184, 184) solid;
+}
+}

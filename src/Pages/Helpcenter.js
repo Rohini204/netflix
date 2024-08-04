@@ -7,6 +7,7 @@ import Header1 from '../Sanmi/Help/Header1.js';
 import SearchBar from '../Sanmi/Help/SearchBar.js';
 import PopularTopics from '../Sanmi/Help/PopularTopics.js';
 import FAQ from '../Sanmi/Help/FAQ.js';
+import Footer2 from '../Riya/Components/Footer2.js';
 
 const Helpcenter = () => {
 

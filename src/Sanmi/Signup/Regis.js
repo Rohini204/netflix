@@ -22,7 +22,7 @@ const Regis = () => {
     <div className="signInForm ">
             <h1>Sign Up</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form action='Subscription'>
         <input
           type="text"
           placeholder='Name'
@@ -65,8 +65,8 @@ const Regis = () => {
 
         <button type="submit">Create account</button>
 
-        <p>Already a member? <a href="/SignIn">Login</a></p>
       </form>
+        <p>Already a member? <a href="/SignIn">Login</a></p>
     </div>
   );
 };

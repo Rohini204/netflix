@@ -10,7 +10,6 @@ const Navbar = () => {
           <label >
             <select name="English" id="lang">
               <option value="English">English</option>
-              <option value="Hindi">Hindi</option>
             </select>
             </label>
           <label>

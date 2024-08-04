@@ -5,7 +5,7 @@ import Enjoyontv from '../Riya/Components/Enjoyontv';
 import Downloadshows from '../Riya/Components/Downloadshows';
 import Childrensec from '../Riya/Components/Childrensec';
 import Faq from '../Riya/Components/Faq';
-import Footer from '../Sanmi/Signup/Footer';
+import Footer2 from '../Riya/Components/Footer2';
 
 
 const Firstpage = () => {

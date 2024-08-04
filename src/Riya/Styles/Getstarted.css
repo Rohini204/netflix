@@ -1,7 +1,7 @@
 .getstarted{
     margin: 0;
     padding: 100px 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.8) 100%),url('../Assets/Netflix-Background.jpg');
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%),url('../Assets/Netflix-Background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -19,8 +19,8 @@
     }
 }
 .ig{
-    padding-top:50px;
-    padding-bottom: 50px;
+    padding-top:80px;
+    padding-bottom: 80px;
 }
 .inside{
     display: flex;
