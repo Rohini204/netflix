@@ -1,21 +1,16 @@
-body{
-    margin: 0;
-    background-color: black;
-    width: 100%;
-    color: rgb(214, 209, 209);
-}
+
 .container{
     font-size: 20px;
     padding: 0 150px;
     font-weight: 600;
-}
-.heading{
-    color: white;
-    font-weight: 900;
 }
 @media(max-width:1250px){
     .container{
         padding: 0 20px;
         font-size: 16px;
     }
+}
+.heading{
+    color: white;
+    font-weight: 900;
 }

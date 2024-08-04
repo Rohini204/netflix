@@ -3,7 +3,17 @@
     background: black;
     
 }
-
+.container{
+    font-size: 20px;
+    padding: 0 150px;
+    font-weight: 600;
+}
+@media(max-width:1250px){
+    .container{
+        padding: 0 20px;
+        font-size: 16px;
+    }
+}
 .insideenjoy{
     display: flex;
     justify-content: space-around;

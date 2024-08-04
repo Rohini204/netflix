@@ -1,0 +1,75 @@
+.Style2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signInForm {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  max-width: 350px;
+  
+  color: #fff;
+  text-align: center;
+}
+
+.signInForm h1 {
+  margin-bottom: 20px;
+}
+
+.signInForm form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.signInForm input {
+  background-color: #333;
+  border: none;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.signInForm button {
+  background-color: #e50914;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signInForm .helpLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.signInForm .signupLink {
+  margin-top: 20px;
+}
+
+.signInForm .signupLink span {
+  margin-right: 5px;
+}
+
+.signInForm a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.signInForm a:hover {
+  text-decoration:solid;
+}

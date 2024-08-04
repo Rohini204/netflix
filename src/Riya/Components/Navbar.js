@@ -3,7 +3,7 @@ import '../Styles/Navbar.css'
 import logo from '../Assets/logo.png'
 const Navbar = () => {
   return (
-    <div className='navbar container'>
+    <div className='navbar'>
       
         <img src={logo} alt="" />
         <div className='navlist'>
@@ -13,7 +13,11 @@ const Navbar = () => {
               <option value="Hindi">Hindi</option>
             </select>
             </label>
-          <label><button className='btn'>Sign In</button></label>
+          <label>
+            <a href="/SignIn">
+            <button className='btn'>Sign In</button>
+            </a>
+            </label>
         </div>
       
     </div>

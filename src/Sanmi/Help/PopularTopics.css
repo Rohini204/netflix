@@ -1,0 +1,20 @@
+.popular-topics {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .popular-topics button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .popular-topics button:hover {
+    background-color: #b20710;
+  }
+  

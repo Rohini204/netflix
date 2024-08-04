@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar img{
     width: 150px;
 }
@@ -39,6 +40,7 @@ option{
     .navbar img{
         width: 120px;
     }
+    
     .btn{
         width: 60px;
         height: 29px;

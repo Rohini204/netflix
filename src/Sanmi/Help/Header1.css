@@ -1,0 +1,22 @@
+.header-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    padding: 10px 1rem;
+  }
+  @media(min-width:1000px){
+    .header-header{
+      justify-content: space-around;
+    }
+  }
+  
+  .logohead {
+    height: 30px;
+    margin-right: 1rem;
+  }
+  
+  .header-header h2 {
+    color: white;
+  }
+  
