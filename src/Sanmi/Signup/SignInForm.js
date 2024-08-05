@@ -17,7 +17,7 @@ const SignInForm = () => {
 
     <div className="signInForm">
       <h1>Sign In</h1>
-      <form onSubmit={handleSubmit}>
+      <form  action='netflix'>
         <input
           type="email"
           placeholder="Email or Phone number"

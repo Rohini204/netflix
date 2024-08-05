@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import './Helpcenter.css';
 
 import Header1 from '../Sanmi/Help/Header1.js';
-import SearchBar from '../Sanmi/Help/SearchBar.js';
 import PopularTopics from '../Sanmi/Help/PopularTopics.js';
 import FAQ from '../Sanmi/Help/FAQ.js';
 import Footer2 from '../Riya/Components/Footer2.js';
@@ -55,12 +54,11 @@ const Helpcenter = () => {
   return (
     <div className="App3">
       <Header1/>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <PopularTopics />
       <div className="faq-container">
         {Object.keys(filteredFaqs).map((category, index) => (
-          <FAQ key={index} title={category} faqs={filteredFaqs[category]} />
           
+          <FAQ key={index} title={category} faqs={filteredFaqs[category]} />
         ))}
       </div>
     </div>

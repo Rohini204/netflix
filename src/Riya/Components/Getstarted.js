@@ -4,7 +4,7 @@ import '../Styles/Getstarted.css'
 
 const Getstarted = () => {
   return (
-    <div className='getstarted container'>
+    <div className='getstarted contain'>
       <Navbar/>
       <div className='ig'>
 

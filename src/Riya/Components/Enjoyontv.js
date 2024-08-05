@@ -5,7 +5,7 @@ import tv from '../Assets/Netflix-tv.jpg'
 const Enjoyontv = () => {
   return (
 
-    <div className='enjoyontv container'>
+    <div className='enjoyontv contain'>
 
         <div className='insideenjoy'>
         <div className='inside2'>

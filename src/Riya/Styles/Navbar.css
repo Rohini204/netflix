@@ -1,16 +1,16 @@
-.navbar{
+.navbar1{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar img{
+.navbar1 img{
     width: 150px;
 }
-label{
+.navlist label{
     padding:0 10px;
 }
-select{
+.navlist select{
     background: none;
     color: white;
     width: 100px;
@@ -18,7 +18,7 @@ select{
     border-radius: 5px;
     text-align: center;
 }
-option{
+.navlist option{
     color: black;
 }
 
@@ -37,7 +37,7 @@ option{
 }
 
 @media(max-width:1000px){
-    .navbar img{
+    .navbar1 img{
         width: 120px;
     }
     
@@ -45,7 +45,7 @@ option{
         width: 60px;
         height: 29px;
     }
-    select{
+    .navbarlist select{
         width: 100px;
         height: 30px;
     }

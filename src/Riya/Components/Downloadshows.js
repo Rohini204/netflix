@@ -4,7 +4,7 @@ import '../Styles/Downloadshows.css'
 const Downloadshows = () => {
   return (
     <>
-    <div className='download container'>
+    <div className='download contain'>
       <div className='relative'>
         <img className='img1' src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="" />
           

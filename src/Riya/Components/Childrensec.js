@@ -3,7 +3,7 @@ import '../Styles/Children.css'
 
 const Childrensec = () => {
   return (
-    <div className='enjoyontv container'>
+    <div className='enjoyontv contain'>
 
         <div className='insideenjoy'>
         <div className='inside2'>

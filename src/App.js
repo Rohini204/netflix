@@ -7,6 +7,7 @@ import Register from './Pages/Register';
 import Helpcenter from './Pages/Helpcenter';
 import Faq from './Riya/Components/Faq';
 import Subscription from './Pages/Subscription';
+import Home from './Home';
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Firstpage/>} />
-        <Route path='/SignIn' element={<Sign/>} />
+        <Route path='/SignIn' element={<Sign/>} />      
         <Route path='/SignUp' element={<Register/>} />
         <Route path='/FAQ' element={<Faq/>} />
         <Route path='/HelpCenter' element={<Helpcenter/>} />
         <Route path='/Subscription' element={<Subscription/>} />
+        <Route path='/netflix' element={<Home/>} />
       </Routes>
       </BrowserRouter>
     </div>

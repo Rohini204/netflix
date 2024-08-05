@@ -3,7 +3,7 @@ import '../Styles/Navbar.css'
 import logo from '../Assets/logo.png'
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className='navbar1'>
       
         <img src={logo} alt="" />
         <div className='navlist'>
