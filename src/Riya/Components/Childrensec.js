@@ -8,7 +8,7 @@ const Childrensec = () => {
         <div className='insideenjoy'>
         <div className='inside2'>
             <h1 className='heading'>Create profiles for kids</h1>
-            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            <p>Send children on adventures with their favourite characters in a space made just for them — free with your membership.</p>
         </div>
 
         <div className='relative'>
