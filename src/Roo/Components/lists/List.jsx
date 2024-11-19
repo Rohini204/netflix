@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react'
 import "./list.scss"
+import axios from 'axios'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Listitem from '../listitems/Listitem';
-import axios from 'axios';
 const List = () => {
   const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
@@ -13,7 +13,7 @@ const List = () => {
 
   
   useEffect(() => {
-    axios.get('https://retoolapi.dev/QhTxfm/data')
+    axios.get('http://localhost:3003/api/data')
       .then((response) => {
         setMovies(response.data);
       })

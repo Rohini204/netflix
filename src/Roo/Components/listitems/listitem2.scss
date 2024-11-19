@@ -42,6 +42,10 @@
         .icons {
           display: flex;
           margin-bottom: 10px;
+          a{
+            text-decoration: none;
+            color: white;
+          }
   
           .icon {
             border: 2px solid white;

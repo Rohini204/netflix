@@ -7,6 +7,16 @@ import React, { useState } from 'react';
 
 const Listitem2 = ({ index, movie }) => {
     const [isHovered, setIsHovered] = useState(false);
+
+    
+  const handleLike = () => {
+    let likedMoviess = JSON.parse(localStorage.getItem('likedMoviess')) || [];
+    likedMoviess.push(movie);
+    localStorage.setItem('likedMoviess', JSON.stringify(likedMoviess));
+    // navigate('/liked-movies');
+  };
+
+
     const trailer = "https://www.youtube.com/watch?v=_OKAwz2MsJs&pp=ygUNbW92aWUgdHJhaWxlcg%3D%3D";
   return (
     <div
@@ -15,15 +25,17 @@ const Listitem2 = ({ index, movie }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      
       <img src={movie.Link} alt={movie.Title} />
       {isHovered && (
         <>
           <video src={trailer} autoPlay={true} loop />
           <div className="itemInfo">
             <div className="icons">
-              <PlayArrowIcon className="icon" />
+              <a href="/watch">
+              <PlayArrowIcon className="icon" /></a>
               <AddIcon className="icon" />
-              <ThumbUpOutlinedIcon className="icon" />
+              <ThumbUpOutlinedIcon className="icon" onClick={handleLike}/>
               <ThumbDownOutlinedIcon className="icon" />
             </div>
             <div className="itemInfoTop">
@@ -44,3 +56,62 @@ const Listitem2 = ({ index, movie }) => {
 
 
 export default Listitem2
+
+
+// import './listitem2.scss';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import AddIcon from '@mui/icons-material/Add';
+// import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
+// import ThumbDownOutlinedIcon from '@mui/icons-material/ThumbDownOutlined';
+// import React, { useState, useContext } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import { LikedMoviesContext } from '../context/LikedMoviesContext';
+
+// const Listitem2 = ({ index, movie }) => {
+//     const [isHovered, setIsHovered] = useState(false);
+//     // const { addLikedMovie } = useContext(LikedMoviesContext);
+//     const navigate = useNavigate();
+//     const trailer = "https://www.youtube.com/watch?v=_OKAwz2MsJs&pp=ygUNbW92aWUgdHJhaWxlcg%3D%3D";
+
+//     const handleLike = () => {
+//         addLikedMovie(movie); // Add the movie to the liked list
+//         navigate('/likedmovies'); // Navigate to the LikedMovies page
+//     };
+
+//     return (
+//         <div
+//             className="listItem"
+//             style={{ left: isHovered ? index * 225 - 50 + index * 2.5 : 'auto' }}
+//             onMouseEnter={() => setIsHovered(true)}
+//             onMouseLeave={() => setIsHovered(false)}
+//         >
+//             <img src={movie.Link} alt={movie.Title} />
+//             {isHovered && (
+//                 <>
+//                     <video src={trailer} autoPlay={true} loop />
+//                     <div className="itemInfo">
+//                         <div className="icons">
+//                             <a href="/watch">
+//                                 <PlayArrowIcon className="icon" />
+//                             </a>
+//                             <AddIcon className="icon" />
+//                             <ThumbUpOutlinedIcon className="icon" onClick={handleLike} />
+//                             <ThumbDownOutlinedIcon className="icon" />
+//                         </div>
+//                         <div className="itemInfoTop">
+//                             <span className='listtitlebox'>{movie.Title}</span>
+//                             <span>{movie.Duration}</span>
+//                             <span className="limit">{movie.Rating}</span>
+//                         </div>
+//                         <div className="desc">
+//                             {movie.Description}
+//                         </div>
+//                         <div className="genre">{movie.Genre}</div>
+//                     </div>
+//                 </>
+//             )}
+//         </div>
+//     );
+// };
+
+// export default Listitem2;

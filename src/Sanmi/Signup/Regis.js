@@ -1,35 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './SignInForm.css';
+import axios from 'axios';
 const Regis = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    nickname: '',
-    email: '',
-    password: '',
-  });
+  const [username, setUsername] = useState('');
+  const [nickname, setNickname] = useState('');
+  const [email,setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
-
-  const handleSubmit = (e) => {
+  useEffect(()=>{
+    const token = localStorage.getItem('token');
+    if(token){
+      setIsLoggedIn(true);
+    }
+  })
+  
+  
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try {
+      await axios.post('http://localhost:3003/SignUp', { email, password });
+      alert('User registered successfully');
+    } catch (error) {
+      alert('Error registering user');
+    }
   };
 
   return (
     <div className="signInForm ">
             <h1>Sign Up</h1>
 
-      <form action='Subscription'>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder='Name'
           id="name"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
+          onChange={(e)=>{setUsername(e.target.value)}}
           required
         />
 
@@ -38,8 +45,7 @@ const Regis = () => {
           id="nickname"
           placeholder='Nickname'
           name="nickname"
-          value={formData.nickname}
-          onChange={handleChange}
+          onChange={(e)=>{setNickname(e.target.value)}}
           
         />
 
@@ -48,8 +54,7 @@ const Regis = () => {
           id="email"
           name="email"
           placeholder='Email'
-          value={formData.email}
-          onChange={handleChange}
+          onChange={(e)=>{setEmail(e.target.value)}}
           required
         />
 
@@ -58,8 +63,7 @@ const Regis = () => {
           id="password"
           name="password"
           placeholder='Password'
-          value={formData.password}
-          onChange={handleChange}
+          onChange={(e)=>{setPassword(e.target.value)}}
           required
         />
 

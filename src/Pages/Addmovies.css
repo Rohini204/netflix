@@ -1,0 +1,111 @@
+/* Addmovies.css */
+
+
+  
+  .Addmovies {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .am {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+  }
+  
+  .am form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        background: none;
+        color: whitesmoke;
+    }
+}
+
+.am input[type="text"], .am input[type="file"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px white solid;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .am input[type="file"]{
+    width: 90%;
+  }
+  
+  .am button {
+    width: 50%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .am button:hover {
+    background-color: darkred;
+  }
+  
+  .food {
+    background-color: #3f3e3e;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .food h3 {
+    margin-bottom: 10px;
+  }
+  
+  .food input[type="text"] {
+    width: calc(100% - 300px);
+    padding: 10px 0;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px white solid;
+    background: none;
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+  
+  .food button {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .food button:hover {
+    background-color: darkred;
+  }
+  
+  @media (max-width: 600px) {
+    .am input[type="text"], .food input[type="text"] {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .food button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

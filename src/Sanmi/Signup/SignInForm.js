@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState} from 'react';
+import axios from 'axios';
 import './SignInForm.css';
+import { useNavigate } from 'react-router-dom';
 
 const SignInForm = () => {
+
+  const nav = useNavigate();
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isLoggedIn,setIsLoggedIn]= useState(false);
 
-  const handleSubmit = (e) => {
+  useEffect(()=>{
+    const token = localStorage.getItem('token');
+    if(token){
+      setIsLoggedIn(true);
+    }
+  })
+  
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Email:', email, 'Password:', password);
+    try {
+      const response = await axios.post('http://localhost:3003/SignIn', { email, password });
+      localStorage.setItem('token', response.data.token);
+      nav('/netflix')
+            setIsLoggedIn(true);
+    } catch (error) {
+      alert('Error logging in');
+    }
   };
 
   return (
@@ -17,18 +36,16 @@ const SignInForm = () => {
 
     <div className="signInForm">
       <h1>Sign In</h1>
-      <form  action='netflix'>
+      <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Email or Phone number"
-          value={email}
+          placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <input
           type="password"
           placeholder="Password"
-          value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />

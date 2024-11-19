@@ -7,6 +7,14 @@ import React, { useState } from 'react';
 
 const Listitem3 = ({ index, movie }) => {
     const [isHovered, setIsHovered] = useState(false);
+
+    const handleLike = () => {
+      let likedMoviess = JSON.parse(localStorage.getItem('likedMoviess')) || [];
+      likedMoviess.push(movie);
+      localStorage.setItem('likedMoviess', JSON.stringify(likedMoviess));
+      // navigate('/liked-movies');
+    };
+  
     const trailer = "https://www.youtube.com/watch?v=_OKAwz2MsJs&pp=ygUNbW92aWUgdHJhaWxlcg%3D%3D";
   return (
     <div
@@ -21,9 +29,10 @@ const Listitem3 = ({ index, movie }) => {
         <video src={trailer} autoPlay={true} loop />
         <div className="itemInfo">
           <div className="icons">
-            <PlayArrowIcon className="icon" />
+            <a href="/watch">
+            <PlayArrowIcon className="icon" /></a>
             <AddIcon className="icon" />
-            <ThumbUpOutlinedIcon className="icon" />
+            <ThumbUpOutlinedIcon className="icon" onClick={handleLike}/>
             <ThumbDownOutlinedIcon className="icon" />
           </div>
           <div className="itemInfoTop">
